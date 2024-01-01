@@ -17,7 +17,7 @@ const emailValid = zod.string().email();
 const passwordValid = zod.string().min(8);
 
 await mongoose.connect(
-  "mongodb+srv://Admin:admin@cluster0.itvhwu4.mongodb.net/MERN-AUTH"
+  "DB_URL"
 );
 console.log("DB Connected!");
 
